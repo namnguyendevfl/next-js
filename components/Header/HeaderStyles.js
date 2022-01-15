@@ -8,3 +8,22 @@ export const StyledContainer = styled(Container)`
     height: 45px;
 `
 
+export const StyledRow = styled(Row)`
+    width: 100%;
+    color: white;
+`
+export const StyledCol = styled(Col)`
+    color: white;
+   
+`
+
+export const StyledNavItem = styled.button`
+    width: auto;
+    display: flex;
+    align-items:center;
+    background:none;
+    color: white;
+    outline:none;
+    border:none;
+`
+

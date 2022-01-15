@@ -1,6 +1,4 @@
 import '../styles/globals.css'
-// import '../styles/scss/globals.scss'
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

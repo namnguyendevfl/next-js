@@ -1,14 +1,33 @@
 import React from "react";
-import { StyledContainer } from "./HeaderStyles"
+import { StyledContainer, StyledRow, StyledCol, StyledNavItem } from "./HeaderStyles"
 
 export default function Header() {
     return (<>
-    {/* <div className = ""> */}
-        <StyledContainer fluid className = "d-flex align-items-center">
-            
-            This is header
+        <StyledContainer fluid className = "p-0 d-flex align-items-center">
+            <StyledRow className = "p-0 m-0 d-flex justify-content-between">
+                <StyledCol>
+                    First colum
+                </StyledCol>
+                <StyledCol>
+                    <StyledRow className = "p-0 d-flex justify-content-end">
+                        <StyledNavItem className="m-0 txt-sm fw-5">
+                            Experiences
+                        </StyledNavItem >
+                        <StyledNavItem className="m-0 txt-sm fw-5">
+                            Projects
+                        </StyledNavItem>
+                        <StyledNavItem className="m-0 txt-sm fw-5"> 
+                            About
+                        </StyledNavItem>
+                        <StyledNavItem className="m-0 txt-sm fw-5">
+                            Contact
+                        </StyledNavItem>
+                        <StyledNavItem className="m-0 txt-sm fw-5">
+                            Resume
+                        </StyledNavItem>
+                    </StyledRow>
+                </StyledCol>
+            </StyledRow>
         </StyledContainer>
-    {/* </div> */}
-        
     </>)
 }
