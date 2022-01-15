@@ -1,11 +1,12 @@
 import React from "react";
 
 export default function About () {
+    const firstParagraph = `Hello! I'm Nam, and I'm originally from Vietnam. I am a Thinkful graduate student in the Flex Engineering program graduating in Januray 2022. I have a doctoral degree in Medicine from University of Medicine and Pharmacy in VietNam.`
     return (<>
         <h3 className="txt-lg fw-6">About</h3>
         <div>
             <p className="txt-gray-6">
-                Hello! I'm Nam, and I'm originally from Vietnam. I am a Thinkful graduate student in the Flex Engineering program graduating in Januray 2022. I have a doctoral degree in Medicine from University of Medicine and Pharmacy in VietNam.
+                {firstParagraph}
             </p>
             <p className="txt-gray-6">
                 Previously, I practiced medicine for a period of time in Vietnam and continued to study medicine when coming the U.S. I took a series of USMLE and applied for a residency program. Sadly, I did not get an interview because I failed one of the exams on the first attempt, and I am an old medical graduate. 
