@@ -21,8 +21,9 @@ a {
   line-height: 1.25rem;
 }
 
+
 .txt-md {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -42,6 +43,12 @@ a {
 .fw-7 {
   font-weight: 700;
 }
+
+.txt-gray-6 {
+  color: rgb(75 85 99);
+}
+
+
 .icon-sm {
   width: 30px;
   height: 30px;

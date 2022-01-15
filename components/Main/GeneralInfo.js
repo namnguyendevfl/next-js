@@ -12,7 +12,7 @@ export default function GeneralInfo() {
                     <Image src = {avatar} width = "200px" height = "200px" />
                 </StyledImage>
             </div>
-
+            <div style = {{height:"20px"}}></div>
             <p className="d-flex justify-content-center txt-lg fw-7 py-1 m-0 w-100">Nam Nguyen</p>
             <p className="d-flex justify-content-center m-0 py-1 txt-sm fw-5 w-100">Full Stack Web Developer</p>
             <div className="px-4">   

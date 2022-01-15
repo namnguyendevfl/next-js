@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./About";
 import GeneralInfo from "./GeneralInfo";
 import { StyledContainer, StyledRow, StyledCol } from "./MainStyles"
 
@@ -11,7 +12,9 @@ export default function Main () {
                     <GeneralInfo />
                 </StyledCol>
                 <StyledCol>
-                    Info
+                    <div>
+                        <About />
+                    </div>
                 </StyledCol>
             </StyledRow>
         </StyledContainer>

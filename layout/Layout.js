@@ -6,9 +6,8 @@ import { StyledBreak } from "./LayoutStyles";
 
 export default function Layout () {
     return (<>
-    <Header></Header>
-    <StyledBreak />
-    <Main></Main>
-    <Footer></Footer>
+        <Header></Header>
+        <StyledBreak />
+        <Main></Main>
     </>)
 }
