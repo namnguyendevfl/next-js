@@ -2,7 +2,6 @@
     max-width: 300px;
     min-width: 300px;
     height: 100%;
-    
 }
 
 .image {
@@ -13,7 +12,7 @@
 }
 
 .break {
-    height: 20px
+    height: 17px
 }
 
 .center {
@@ -28,5 +27,5 @@
 }
 
 .banner-spacing {
-    height: 80px;
+    height: 65px;
 }

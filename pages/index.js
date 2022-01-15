@@ -16,11 +16,13 @@ export default function Home() {
 Home.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <div className='d-flex'>
+      <div className='d-flex' >
         <SideInfo />
         <div className='w-100'>
           <Header />
-          {page}
+          <div >
+            {page}
+          </div>
         </div>
       </div>
     </Layout>
