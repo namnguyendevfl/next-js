@@ -1,11 +1,10 @@
 import styled, { css } from 'styled-components'
 import { Container, Row, Col } from 'react-bootstrap'
 
-export const StyledContainer = styled(Container)`
-    background: black;
-    color: white;
+export const StyledContainer = styled.div`
     width: 100%;
-    height: 45px;
+    height: 65px;
+    // border: 1px solid black;
 `
 
 export const StyledRow = styled(Row)`
@@ -22,8 +21,18 @@ export const StyledNavItem = styled.button`
     display: flex;
     align-items:center;
     background:none;
-    color: white;
     outline:none;
     border:none;
 `
 
+export const StyledList = styled.ul `
+    list-style: none;
+    display: flex;
+    align-items:center;
+    width: 100%;
+`
+
+export const StyledBreak = styled.div `
+    height: 50px;
+    // width: 100%;
+`

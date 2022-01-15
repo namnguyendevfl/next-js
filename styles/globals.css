@@ -32,6 +32,10 @@ a {
   line-height: 1.7rem;
 }
 
+.txt-xl {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+}
 .fw-5 {
   font-weight: 500;
 }
@@ -48,6 +52,9 @@ a {
   color: rgb(75 85 99);
 }
 
+.text-gray-7 {
+  color: rgb(55 65 81)
+}
 
 .icon-sm {
   width: 30px;
@@ -83,4 +90,10 @@ a {
 /* background and colors */
 .bg-none {
   background: none;
+}
+
+.element-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
