@@ -9,7 +9,7 @@ export default function GeneralInfo() {
         <div>
             <div className="d-flex justify-content-center w-100">
                 <StyledImage className="">
-                    <Image src = {avatar} width = "200px" height = "200px" />
+                    <Image alt = "my avatar" src = {avatar} width = "200px" height = "200px" />
                 </StyledImage>
             </div>
             <div style = {{height:"20px"}}></div>
