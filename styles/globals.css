@@ -67,12 +67,11 @@ a {
   border-radius: 8px
 };
 
-/* element positions */
-.element-center {
+.item-center {
   display: flex;
-  align-items:center;
   justify-content: center;
 }
+
 
 /* background and colors */
 .bg-none {
