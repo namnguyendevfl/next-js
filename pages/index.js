@@ -3,6 +3,7 @@ import { Header } from '../components/shared/Header'
 import { SideInfo } from '../components/shared/SideInfo'
 import { Layout } from '../components/shared/Layout'
 
+
 export default function Home() {
   return (
     <>

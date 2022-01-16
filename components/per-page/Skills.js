@@ -24,16 +24,17 @@ export default function Skills () {
         {"Bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"},
         {"TailwindCSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"},
         {"Javascript": 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'},
+        {"Redux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"},
         {"React":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
+        {"Nextjs": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"},
         {"Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"},
         {"Express":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"},
         {"PostgreSQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"},
         {"Mocha": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg"},
-        {"Github": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"},
-        {"Vercel": vercelIcon},
         {"Chai": chaiIcon},
+        {"Vercel": vercelIcon},
         {"Heroku": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"},
-        {"Nextjs": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"}
+        {"Github": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"},
     ]
 
     const renderedImages = images.map((image, idx) => {
@@ -44,8 +45,7 @@ export default function Skills () {
             return true
         })()
         return (
-            <>
-            <div className='col mx-2 mt-3'>
+            <div key = {idx} className='col mx-2 mt-3'>
                 {link
                 ?   <div className="d-flex justify-content-center align-items-center">
                         <img className={styles.image} src = {src[0]} alt = "language icons" />
@@ -54,8 +54,6 @@ export default function Skills () {
                 }
                 <p className='w-100 d-flex justify-content-center m-0 p-2 txt-sm fw-5'>{name[0]}</p>
             </div>
-            </>
-            
         )
     })
     return (

@@ -1,0 +1,9 @@
+@supports (-ms-ime-align: auto) {
+    .project {
+    width: 45%;
+    border: 1px solid black;
+    }
+}
+
+
+

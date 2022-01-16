@@ -6,7 +6,7 @@ import { Icon } from "./Icons";
 export default function SideInfo() {
     return (
         <>
-        <div className={styles.container + " mx-4 p-0"}>
+        <div className={styles.container + " me-4 p-0"}>
             <div className={styles["banner-spacing"]}></div>
             <div className='py-4' style = {{border: "2px solid #ced4da"}}>
                 <div className={styles.center}>

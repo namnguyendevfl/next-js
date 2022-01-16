@@ -1,21 +1,10 @@
-import styled, { css } from 'styled-components'
-import { Container, Row, Col } from 'react-bootstrap'
+import styled from 'styled-components'
 
 export const StyledContainer = styled.div`
     width: 100%;
     height: 65px;
     // border: 1px solid black;
 `
-
-export const StyledRow = styled(Row)`
-    width: 100%;
-    color: white;
-`
-export const StyledCol = styled(Col)`
-    color: white;
-   
-`
-
 export const StyledNavItem = styled.button`
     width: auto;
     display: flex;

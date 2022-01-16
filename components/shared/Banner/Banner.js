@@ -1,6 +1,7 @@
 import { Container } from "./BannerStyles"
 
-export default function Banner () {
+export default function Banner ({webBrowser}) {
+    // console.log(webBrowser)
     const hello = `Hi! I'm Nam`
     return (
         <>
