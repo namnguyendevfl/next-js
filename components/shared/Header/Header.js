@@ -3,7 +3,7 @@ import Link from "next/link"
 import { StyledContainer, StyledNavItem, StyledList } from "./HeaderStyles"
 
 export default function Header() {
-    const navItems = ['Home', 'Skills', 'Experiences', 'Projects', 'Education', 'Q&A', 'Contact', 'Resume']
+    const navItems = ['Home', 'Skills', 'Projects', 'Q&A', 'Contact', 'Resume']
     const renderedNavItems = navItems.map((item, idx) => {
         
         const link = item === "Home" ? `/` : `/${item.toLowerCase()}`
