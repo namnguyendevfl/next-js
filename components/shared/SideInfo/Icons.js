@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiStackOverflowLine } from "react-icons/ri";
 
 export const Icon = ({type}) => {
-    return <IconContext.Provider value={{ color: "black", className: "icon-sm" }}>
+    return <IconContext.Provider value={{ color: "black", className: "icon-30" }}>
     <button className="border-outline-none bg-none element-center">
         {type === "mail" && <HiMail />}
         {type === "github" && <AiFillGithub />}

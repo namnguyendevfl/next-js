@@ -22,8 +22,8 @@ export default function SideInfo() {
                         <hr className="m-0 mt-3" style = {{width:"250px"}}></hr>
                     </div>
                     <div className="d-flex justify-content-center py-4">
-                        <button className={styles.btn + " border-outline-none border-8px"} >
-                            <p className="d-flex justify-content-center m-0 p-2 border-outline-none txt-md fw-6">Download CV</p>
+                        <button className={styles.btn + " border-outline-none border-8px px-4 txt-md fw-6"} > Download CV
+                            {/* <p className="d-flex justify-content-center m-0 p-2 border-outline-none txt-md fw-6">Download CV</p> */}
                         </button>
                     </div>
                     <div className="d-flex justify-content-center">

@@ -1,15 +1,15 @@
-import { Contact } from '../components/per-page'
+import { Skills } from '../components/per-page'
 import { Header } from '../components/shared/Header'
 import { Layout } from '../components/shared/Layout'
 import { SideInfo } from '../components/shared/SideInfo'
 
-export default function ContactPage() {
+export default function SkillsPage() {
     return (<>
-    <Contact />
+    <Skills />
     </>)
 }
 
-ContactPage.getLayout = function getLayout(page) {
+SkillsPage.getLayout = function getLayout(page) {
     return (
     <Layout>
         <div className='d-flex'>

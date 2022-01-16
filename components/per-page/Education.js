@@ -3,6 +3,7 @@ export default function Education () {
     const mdTitle = `Doctor of Medicine | 09/2008 - 09/2014`
     const schoolTitle = `University of Medicine and Pharmacy in Ho Chi Minh city - Ho Chi Minh city, VietNam`
     return (<>
+        <h2 className="fw-7 letter-spacing-tight">Education</h2>
         <h3 className="txt-xl fw-6 pt-3"> {ecfmgTitle} </h3>
         <div>
             <p className="txt-gray-6">

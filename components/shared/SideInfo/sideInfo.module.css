@@ -22,8 +22,9 @@
 }
 
 .btn {
-    background: blue;
+    background: #3578E5;
     color: white;
+    height: 40px;
 }
 
 .banner-spacing {

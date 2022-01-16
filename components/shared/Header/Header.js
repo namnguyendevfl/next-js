@@ -1,16 +1,16 @@
 import React from "react";
 import Link from "next/link"
-import { StyledContainer, StyledRow, StyledCol, StyledNavItem, StyledList, StyledBreak } from "./HeaderStyles"
+import { StyledContainer, StyledNavItem, StyledList } from "./HeaderStyles"
 
 export default function Header() {
-    const navItems = ['Home', 'Experiences', 'Projects', 'Education', 'Q&A', 'Contact', 'Resume']
+    const navItems = ['Home', 'Skills', 'Experiences', 'Projects', 'Education', 'Q&A', 'Contact', 'Resume']
     const renderedNavItems = navItems.map((item, idx) => {
         
         const link = item === "Home" ? `/` : `/${item.toLowerCase()}`
         return (<>
         <li key = {idx}>
             <Link href={link}>
-                <StyledNavItem className="m-0 txt-md fw-5 px-2 txt-gray-7">
+                <StyledNavItem className="m-0 txt-md fw-5 px-4 txt-gray-7">
                     {item}
                 </StyledNavItem >
             </Link>

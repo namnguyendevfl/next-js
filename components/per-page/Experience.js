@@ -19,6 +19,7 @@ export default function Experience () {
     })
     return (<>
         <section>
+            <h2 className="fw-7 letter-spacing-tight">Experiences</h2>
             <h3 className="txt-xl fw-6 pt-3"> {thinkfulTitle} </h3>
             <h3 className="txt-lg fw-6"> {thinkfulSubtitle}</h3>
             <div className="d-flex ps-5">

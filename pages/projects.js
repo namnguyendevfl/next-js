@@ -1,4 +1,3 @@
-import { Banner } from '../components/shared/Banner'
 import { Header } from '../components/shared/Header'
 import { Layout } from '../components/shared/Layout'
 import { SideInfo } from '../components/shared/SideInfo'
