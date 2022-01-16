@@ -45,7 +45,7 @@ export default function Skills () {
         })()
         return (
             <>
-            <div className='col-2 mt-3'>
+            <div className='col mx-2 mt-3'>
                 {link
                 ?   <div className="d-flex justify-content-center align-items-center">
                         <img className={styles.image} src = {src[0]} alt = "language icons" />
@@ -60,7 +60,7 @@ export default function Skills () {
     })
     return (
         <>
-        <div className='w-100 d-flex justify-content-center'>
+        <div className='w-100 d-flex '>
             <div className='row d-flex flex-wrap'>
                 {renderedImages}
 
