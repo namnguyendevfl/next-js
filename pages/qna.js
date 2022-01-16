@@ -2,7 +2,7 @@ import { Header } from '../components/shared/Header'
 import { Layout } from '../components/shared/Layout'
 import { SideInfo } from '../components/shared/SideInfo'
 
-export default function ProjectsPage() {
+export default function QNAPage() {
     return (<>
     <div>
         This is the project page
@@ -10,7 +10,7 @@ export default function ProjectsPage() {
     </>)
 }
 
-ProjectsPage.getLayout = function getLayout(page) {
+QNAPage.getLayout = function getLayout(page) {
     return (
     <Layout>
         <div className='d-flex'>
