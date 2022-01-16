@@ -6,7 +6,11 @@ export default function Header() {
     const navItems = ['Home', 'Skills', 'Projects', 'Q&A', 'Contact', 'Resume']
     const renderedNavItems = navItems.map((item, idx) => {
         
-        const link = item === "Home" ? `/` : `/${item.toLowerCase()}`
+        const link = (() => {
+            if (item === "Home") return '/'
+            if (item === 'Q&A') return '/questions-and-anwsers'
+            return `/${item.toLowerCase()}`
+        })()
         return (<>
         <li key = {idx}>
             <Link href={link}>

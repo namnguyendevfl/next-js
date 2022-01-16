@@ -5,7 +5,7 @@ export default function Contact () {
     return (
         <>
         <div className='d-flex justify-content-between'>
-            <form>
+            <form className='col-4'>
                 <h2 className='fw-7 letter-spacing-tight'>Contact me</h2>
                 <div className='d-flex flex-column'>
                     <label>Name: </label>
@@ -25,7 +25,8 @@ export default function Contact () {
                 </div>
                 <button className={styles.send + " txt-md fw-6 border-8px px-4 mt-4 border-outline-none"}>Send</button>
             </form>
-            <div className={styles.info}>
+            <div className='mx-5'></div>
+            <div className={styles.info + " col-4"}>
                 <h2 className='fw-7 letter-spacing-tight'>Infomation</h2>
                 <div className='d-flex align-items-center my-3'>
                     <Icon type = {"address"}/>
