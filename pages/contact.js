@@ -1,7 +1,7 @@
 import { Contact } from '../components/per-page'
 import { Header } from '../components/shared/Header'
 import { Layout } from '../components/shared/Layout'
-import { SideInfo } from '../components/shared/SideInfo'
+import { SideInfo, SideInfoOffset  } from '../components/shared/SideInfo'
 
 export default function ContactPage() {
     return (<>
@@ -14,6 +14,7 @@ ContactPage.getLayout = function getLayout(page) {
     <Layout>
         <div className='d-flex'>
           <SideInfo />
+          <SideInfoOffset />
           <div className='w-100'>
             <Header />
             {page}

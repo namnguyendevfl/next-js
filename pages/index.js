@@ -1,6 +1,6 @@
 import { About } from '../components/per-page'
 import { Header } from '../components/shared/Header'
-import { SideInfo } from '../components/shared/SideInfo'
+import { SideInfo, SideInfoOffset } from '../components/shared/SideInfo'
 import { Layout } from '../components/shared/Layout'
 
 
@@ -19,6 +19,7 @@ Home.getLayout = function getLayout(page) {
     <Layout>
       <div className='d-flex' >
         <SideInfo />
+        <SideInfoOffset />
         <div className='w-100'>
           <Header />
           <div >

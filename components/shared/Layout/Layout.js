@@ -69,13 +69,12 @@ export default class Layout extends React.Component {
     <Provider store = {store}>
       <HeadComponent webBrowser = {this.state.webBrowser}/>
       <Banner/>
-      { this.state.webBrowser === 'Microsoft Edge (Chromium)'
-        && <ContainerEdge> {this.props.children} </ContainerEdge>
-      }
-      { this.state.webBrowser === 'Google Chrome or Chromium'
-        && <ContainerChrome> {this.props.children} </ContainerChrome>
-      }
-      
+        { this.state.webBrowser === 'Microsoft Edge (Chromium)'
+          && <ContainerEdge> {this.props.children} </ContainerEdge>
+        }
+        { this.state.webBrowser === 'Google Chrome or Chromium'
+          && <ContainerChrome> {this.props.children} </ContainerChrome>
+        }
     </Provider>
     </> 
     ) 
