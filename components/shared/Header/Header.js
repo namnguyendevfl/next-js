@@ -4,10 +4,10 @@ import { StyledContainer, StyledNavItem, StyledList } from "./HeaderStyles"
 
 export default function Header({type}) {
     const [itemclicked, setItemclicked] = useState(type)
-    const navItems = ['Home', 'Skills', 'Projects', 'Q&A', 'Contact', 'Resume']
+    const navItems = ['About', 'Skills', 'Projects', 'Q&A', 'Contact', 'Resume']
     const renderedNavItems = navItems.map((item, idx) => {
         const link = (() => {
-            if (item === "Home") return '/'
+            if (item === "About") return '/'
             if (item === 'Q&A') return '/questions-and-anwsers'
             return `/${item.toLowerCase()}`
         })()
