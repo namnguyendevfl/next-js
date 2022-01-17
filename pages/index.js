@@ -1,6 +1,6 @@
 import { About } from '../components/per-page'
 import { Header } from '../components/shared/Header'
-import { SideInfo, SideInfoOffset } from '../components/shared/SideInfo'
+import { SideInfo, SideInfoOffset } from '../components/shared/Badge'
 import { Layout } from '../components/shared/Layout'
 
 

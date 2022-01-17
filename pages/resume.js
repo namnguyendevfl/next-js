@@ -1,7 +1,7 @@
 import { Banner } from '../components/shared/Banner'
 import { Header } from '../components/shared/Header'
 import { Layout } from '../components/shared/Layout'
-import { SideInfo, SideInfoOffset } from '../components/shared/SideInfo'
+import { SideInfo, SideInfoOffset } from '../components/shared/Badge'
 
 export default function Resume() {
     return (<>
