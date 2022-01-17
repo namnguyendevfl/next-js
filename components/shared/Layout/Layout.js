@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import { Banner } from '../Banner';
 import { ContainerChrome, ContainerEdge } from './LayoutStyles';
 import React, { useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import { Provider } from 'react-redux'
 import store from '../../../app/store';
 import { webbrowserSetup } from './LayoutSlice';
+import { HeaderLinen, HeaderSpacing } from '../Header';
 
 const HeadComponent = ({webBrowser}) => {
   const dispatch = useDispatch();
@@ -68,7 +68,8 @@ export default class Layout extends React.Component {
     return ( <>
     <Provider store = {store}>
       <HeadComponent webBrowser = {this.state.webBrowser}/>
-      <Banner/>
+      <HeaderLinen />
+      <HeaderSpacing />
         { this.state.webBrowser === 'Microsoft Edge (Chromium)'
           && <ContainerEdge> {this.props.children} </ContainerEdge>
         }

@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
+export const StyledSpacing = styled.div`
+    height: 90px;
+`
+
 export const StyledContainer = styled.div`
     width: 100%;
     height: 65px;
     position:fixed;
-    top:80px;
-    background:white
+    top:0px;
+    background:black;
+    color: white;
 `
 export const StyledNavItem = styled.button`
     width: auto;
@@ -14,6 +19,7 @@ export const StyledNavItem = styled.button`
     background:none;
     outline:none;
     border:none;
+    color: white
 `
 
 export const StyledList = styled.ul `

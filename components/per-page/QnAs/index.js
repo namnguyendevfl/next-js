@@ -79,7 +79,7 @@ export default function QnAs() {
         )
     })
     return (<>
-        <div>
+        <div className="mt-2">
             {renderedQnAs}
         </div>
     </>)

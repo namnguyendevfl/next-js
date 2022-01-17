@@ -32,6 +32,6 @@ export default function Header() {
                 {renderedNavItems}
             </StyledList>
         </StyledContainer>
-        <hr className="mt-0"></hr>
+        {/* <hr className="mt-0"></hr> */}
     </>)
 }
