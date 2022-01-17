@@ -11,12 +11,15 @@ export default function Header() {
             return `/${item.toLowerCase()}`
         })()
         const padding = {
-            padding : "0 20px 0 20px"
+            padding : "0 20px 0 30px"
+        }
+        const homePadding = {
+            padding : "0 20px 0 0px"
         }
         return (
         <li key = {idx}>
             <Link href = {link} key = {idx}>
-                <StyledNavItem key = {idx} style = {item !== "Home" ? padding : null} className="m-0 txt-md fw-5 pe-4 txt-gray-7">
+                <StyledNavItem key = {idx} style = {item !== "Home" ? padding : homePadding} className="m-0 txt-md fw-5 pe-4 txt-gray-7">
                     {item}
                 </StyledNavItem >
             </Link>
