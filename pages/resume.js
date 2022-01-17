@@ -18,7 +18,7 @@ Resume.getLayout = function getLayout(page) {
           <Badge />
           <BadgeSpacing />
           <div className='w-100'>
-            <Header />
+            <Header type = "Resume"/>
             {page}
           </div>
         </div>

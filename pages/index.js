@@ -21,7 +21,7 @@ Home.getLayout = function getLayout(page) {
         <Badge />
         <BadgeSpacing />
         <div className='w-100'>
-          <Header />
+          <Header type = "Home"/>
           <div >
             {page}
           </div>

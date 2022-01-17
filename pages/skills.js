@@ -16,7 +16,7 @@ SkillsPage.getLayout = function getLayout(page) {
           <Badge />
           <BadgeSpacing />
           <div className='w-100'>
-            <Header />
+            <Header type = "Skills"/>
             {page}
           </div>
         </div>

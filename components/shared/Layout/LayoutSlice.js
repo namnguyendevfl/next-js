@@ -1,7 +1,5 @@
 import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
-
 const layoutAdapter = createEntityAdapter()
-
 
 const initialState = layoutAdapter.getInitialState({
     browser: null

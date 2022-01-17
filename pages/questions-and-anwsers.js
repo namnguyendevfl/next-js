@@ -18,7 +18,7 @@ QNAsPage.getLayout = function getLayout(page) {
           <Badge />
           <BadgeSpacing />
           <div className='w-100'>
-            <Header />
+            <Header type = {`Q&A`}/>
             {page}
           </div>
         </div>

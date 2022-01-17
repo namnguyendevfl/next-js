@@ -16,7 +16,7 @@ ContactPage.getLayout = function getLayout(page) {
           <Badge />
           <BadgeSpacing />
           <div className='w-100'>
-            <Header />
+            <Header type = "Contact"/>
             {page}
           </div>
         </div>
