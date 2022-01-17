@@ -10,10 +10,13 @@ export default function Header() {
             if (item === 'Q&A') return '/questions-and-anwsers'
             return `/${item.toLowerCase()}`
         })()
+        const padding = {
+            padding : "0 20px 0 20px"
+        }
         return (
         <li key = {idx}>
             <Link href = {link} key = {idx}>
-                <StyledNavItem key = {idx} className="m-0 txt-md fw-5 px-4 txt-gray-7">
+                <StyledNavItem key = {idx} style = {item !== "Home" ? padding : null} className="m-0 txt-md fw-5 pe-4 txt-gray-7">
                     {item}
                 </StyledNavItem >
             </Link>
@@ -22,7 +25,7 @@ export default function Header() {
     })
     return (<>
         <StyledContainer fluid className = "p-0 d-flex align-items-center">
-            <StyledList className = "m-0 p-0 d-flex justify-content-center">
+            <StyledList className = "m-0 p-0 d-flex justify-content-start">
                 {renderedNavItems}
             </StyledList>
         </StyledContainer>
