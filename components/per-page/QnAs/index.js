@@ -5,9 +5,9 @@ import { IconContext } from "react-icons";
 
 export const Caret = ({type}) => {
     return <IconContext.Provider value={{ color: "#6b7280", className: "" }}>
-    <button className="border-outline-none bg-none element-center">
+    <div className="border-outline-none bg-none element-center">
         {type === "down" ? <BsFillCaretDownFill /> : <BsFillCaretUpFill/>}
-    </button>
+    </div>
   </IconContext.Provider>
 }
 
@@ -46,7 +46,6 @@ export default function QnAs() {
     const [idEntered, setIdEntered] = useState(null)
     const renderedQnAs = data.map((qna, idx) => {
         const handleClick = ({target}) => {
-            console.log(target)
             if (idClicked === idx) setIdClicked(null)
             else setIdClicked(() => idx)
         }
@@ -62,18 +61,20 @@ export default function QnAs() {
             border: idClicked === idx && '2px solid blue'
         }
         return (
-            <>
-            <StyledQuestion id = {idx} onClick = {handleClick} onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave} style = {style} className={" d-flex align-items-center justify-content-between ps-4 fw-6 txt-lg txt-gray-6"}>
-                {qna.QnA_question}
-                <Caret type = {idClicked !== idx ? "down" : "up"} />
-            </StyledQuestion>
-            { idClicked === idx  
-            ?   <div className="ms-5">
-                <p className="txt-md my-2 txt-gray-6 m-0">{qna.QnA_answer}</p>
+            <div key = {idx}>
+                <StyledQuestion key = {idx} id = {idx} onClick = {handleClick} onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave} style = {style} className={" d-flex align-items-center justify-content-between ps-4 fw-6 txt-lg txt-gray-6"}>
+                    {qna.QnA_question}
+                    <Caret key = {idx} type = {idClicked !== idx ? "down" : "up"} />
+                </StyledQuestion>
+                <div>
+                { idClicked === idx  
+                ?   <div key = {idx} className="ms-5">
+                    <p key = {idx} className="txt-md my-2 txt-gray-6 m-0">{qna.QnA_answer}</p>
+                    </div>
+                :   <div  className="py-2"></div>
+                }
                 </div>
-            :   <div className="py-2"></div>
-            }
-            </>
+            </div>
         )
     })
     return (<>

@@ -36,16 +36,16 @@ export default function Projects() {
 
     const renderedProjects = data.map((project,idx) => {
         const technologies = project.project_tech.split(",")
-        const renderedTech = technologies.map((tech,idx) => {
+        const renderedTech = technologies.map((tech,techIdx) => {
             return (
-                    <div className='m-2 px-2 py-1 border-8px border-gray-1px' style = {{border: "1px solid "}}>
+                    <div key = {techIdx} className='m-2 px-2 py-1 border-8px border-gray-1px' style = {{border: "1px solid "}}>
                         {tech}
                     </div>
                 
             )
         })
         return (
-            <div className="col-5 my-2">
+            <div key = {idx} className="col-5 my-2">
             <StyledProject>
                 <h3>{project.project_name}</h3>
                 <p>{project.project_description}</p>
