@@ -1,6 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
 
-const initialState = [];
+const layoutAdapter = createEntityAdapter()
+
+
+const initialState = layoutAdapter.getInitialState({
+    browser: null
+});
 
 const layoutSlice = createSlice({
     name: "layout",

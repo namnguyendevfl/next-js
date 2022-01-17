@@ -1,5 +1,8 @@
 import styled, { css } from 'styled-components'
 
-export const Container = styled.main`
-    padding: 0 10rem 0 5rem
+export const ContainerChrome = styled.main`
+    padding: 0 7rem 0 7rem
+`
+export const ContainerEdge = styled.main`
+    padding: 0 2.5rem 0 2.5rem
 `

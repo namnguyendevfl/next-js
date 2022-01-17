@@ -6,9 +6,9 @@ export default function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page)
   return getLayout(
   // <Component {...pageProps} />
-  <Provider store={store}>
+  // <Provider store={store}>
       <Component {...pageProps} />
-  </Provider>
+  // </Provider>
   )
 }
 

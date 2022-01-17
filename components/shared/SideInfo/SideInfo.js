@@ -2,8 +2,10 @@ import styles from './sideInfo.module.css'
 import avatar from "./myAvatar.jpg";
 import Image from 'next/image';
 import { Icon } from "./Icons";
+import { useSelector } from 'react-redux';
 
 export default function SideInfo() {
+    
     return (
         <>
         <div className={styles.container + " me-4 p-0"}>

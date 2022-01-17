@@ -1,4 +1,8 @@
+import { useDispatch } from "react-redux"
+
+
 export default function Experience () {
+    const dispatch = useDispatch()
     const thinkfulTitle = `Full-stack Web Developer Training | 8/2021 - Present`
     const thinkfulSubtitle = `Thinkful - Remote `
     const subinternshipTitle = `Subinternship, Internal Medicine | 02/2019 - 02/2020 `

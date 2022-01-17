@@ -1,4 +1,4 @@
-import Projects from '../components/per-page/Projects/Projects'
+import { Projects } from '../components/per-page'
 import { Header } from '../components/shared/Header'
 import { Layout } from '../components/shared/Layout'
 import { SideInfo } from '../components/shared/SideInfo'

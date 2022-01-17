@@ -77,6 +77,10 @@ a {
   outline: none
 }
 
+.border-gray-1px {
+  border : 1px solid rgb(75 85 99);
+}
+
 .border-rounded {
   border-radius: 50%
 }
