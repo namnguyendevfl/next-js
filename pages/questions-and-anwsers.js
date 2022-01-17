@@ -1,7 +1,7 @@
 import { QnAs } from '../components/per-page'
 import { Header } from '../components/shared/Header'
 import { Layout } from '../components/shared/Layout'
-import { SideInfo, SideInfoOffset } from '../components/shared/Badge'
+import { Badge, BadgeSpacing } from '../components/shared/Badge'
 
 export default function QNAsPage() {
     return (<>
@@ -15,8 +15,8 @@ QNAsPage.getLayout = function getLayout(page) {
     return (
     <Layout>
         <div className='d-flex'>
-          <SideInfo />
-          <SideInfoOffset />
+          <Badge />
+          <BadgeSpacing />
           <div className='w-100'>
             <Header />
             {page}

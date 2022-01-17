@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link"
 import { StyledContainer, StyledNavItem, StyledList } from "./HeaderStyles"
 
 export default function Header() {
+    const [itemclicked, setItemclicked] = useState(null)
     const navItems = ['Home', 'Skills', 'Projects', 'Q&A', 'Contact', 'Resume']
     const renderedNavItems = navItems.map((item, idx) => {
         const link = (() => {
@@ -16,11 +17,14 @@ export default function Header() {
         const homePadding = {
             padding : "0 20px 0 0px"
         }
+        const handleClick = (e) => {
+            setItemclicked(() => item)
+        }
         return (
         <li key = {idx}>
-            <Link href = {link} key = {idx}>
-                <StyledNavItem key = {idx} style = {item !== "Home" ? padding : homePadding} className="m-0 txt-md fw-5 pe-4 txt-gray-7">
-                    {item}
+            <Link href = {link} >
+                <StyledNavItem onClick = {handleClick} style = {item !== "Home" ? padding : homePadding} className="m-0 txt-md fw-5 pe-4 txt-gray-7">
+                    <span style = {item === itemclicked ? {color:"#2563eb"} : null}>{item}</span> 
                 </StyledNavItem >
             </Link>
         </li>

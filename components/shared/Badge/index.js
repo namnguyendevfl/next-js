@@ -1,2 +1,2 @@
-export { default as SideInfo } from "./Badge"
-export { default as SideInfoOffset } from "./BadgeOffset"
+export { default as Badge } from "./Badge"
+export { default as BadgeSpacing } from "./BadgeSpacing"

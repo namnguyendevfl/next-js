@@ -11,7 +11,7 @@ const vercelIcon = <div className='d-flex align-items-center justify-content-cen
 </div>
 const chaiIcon = <div className='d-flex align-items-center justify-content-center' >
 <div className='d-flex align-items-center justify-content-center' style = {{height:"130px", width: "130px"}}>
-    <Image alt = "chai" src = {chai} />
+    <Image style = {{zIndex: "1"}} alt = "chai" src = {chai} />
 </div>
 </div>
 

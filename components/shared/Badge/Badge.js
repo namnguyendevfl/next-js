@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Icon } from "./Icons";
 import { useSelector } from 'react-redux';
 
-export default function SideInfo() {
+export default function Badge() {
     
     return (
         <>

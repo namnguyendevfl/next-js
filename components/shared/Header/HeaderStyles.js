@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
+export const StyleHeaderSpacing = styled.div`
+    height: 65px;
+`
+
 export const StyledContainer = styled.div`
     width: 100%;
     height: 65px;
     position:fixed;
     top:80px;
-    background:white
+    background:white;
+    z-index:1;
 `
 export const StyledNavItem = styled.button`
     width: auto;
