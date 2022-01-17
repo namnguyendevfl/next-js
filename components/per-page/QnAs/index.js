@@ -62,8 +62,9 @@ export default function QnAs() {
         }
         return (
             <div key = {idx}>
-                <StyledQuestion key = {idx} id = {idx} onClick = {handleClick} onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave} style = {style} className={" d-flex align-items-center justify-content-between ps-4 fw-6 txt-lg txt-gray-6"}>
-                    {qna.QnA_question}
+                <StyledQuestion key = {idx} id = {idx} onClick = {handleClick} onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave} style = {style} className={" d-flex align-items-center justify-content-between ps-4 fw-6 txt-md txt-gray-6"}>
+                    <span style = {{fontFamily : "cursive"}}> {qna.QnA_question}
+                    </span>
                     <Caret key = {idx} type = {idClicked !== idx ? "down" : "up"} />
                 </StyledQuestion>
                 <div>
