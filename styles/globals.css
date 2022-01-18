@@ -171,6 +171,7 @@ a {
   position: absolute;
   background-color: transparent;
   left:0;
+  top: 4px;
   width: 10px;
   height: 2.5px;
   display: block;
@@ -194,6 +195,7 @@ a {
   position: absolute;
   background-color: transparent;
   left:7.5px;
+  top: 4px;
   width: 10px;
   height: 2.5px;
   display: block;
@@ -213,12 +215,20 @@ a {
     z-index: -1;
 }
 
+.up .left-bar {
+  top: 2px;
+}
+
+.up .right-bar {
+  top: 2px
+}
 .up .left-bar:after {
     transform-origin: center center;
     transform: rotate(-70deg);
   }
 
 .up .right-bar:after {
+    top:0;
     transform-origin: center center;
     transform: rotate(70deg);
   }
