@@ -45,7 +45,7 @@ export default function Skills () {
             return true
         })()
         return (
-            <div key = {idx} className='col mx-2 mt-3'>
+            <div key = {idx} className='col mx-2 my-2'>
                 {link
                 ?   <div className="d-flex justify-content-center align-items-center">
                         <img className={styles.image} src = {src[0]} alt = "language icons" />

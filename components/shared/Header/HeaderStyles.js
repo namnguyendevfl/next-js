@@ -2,15 +2,17 @@ import styled from 'styled-components'
 
 export const StyleHeaderSpacing = styled.div`
     height: 65px;
+    background: black;
 `
 
 export const StyledContainer = styled.div`
     width: 100%;
     height: 65px;
     position:fixed;
-    top:80px;
-    background:white;
-    z-index:1;
+    // top:80px;
+    top: 0px;
+    background:black;
+    color: white;
 `
 export const StyledNavItem = styled.button`
     width: auto;
@@ -19,6 +21,8 @@ export const StyledNavItem = styled.button`
     background:none;
     outline:none;
     border:none;
+    color: white;
+    z-index: 5;
 `
 
 export const StyledList = styled.ul `
@@ -26,6 +30,7 @@ export const StyledList = styled.ul `
     display: flex;
     align-items:center;
     width: 100%;
+    // color: white;
 `
 
 export const StyledBreak = styled.div `

@@ -1,8 +1,7 @@
 import { About } from '../components/per-page'
 import { Header } from '../components/shared/Header'
-import { Badge, BadgeSpacing } from '../components/shared/Badge'
+import { Badge, BadgeSpacing, BadgeHeading  } from '../components/shared/Badge'
 import { Layout } from '../components/shared/Layout'
-
 
 export default function Home() {
   return (
@@ -16,10 +15,11 @@ export default function Home() {
 
 Home.getLayout = function getLayout(page) {
   return (
-    <Layout>
+    <Layout type = "About">
       <div className='d-flex' >
         <Badge />
         <BadgeSpacing />
+        <BadgeHeading />
         <div className='w-100'>
           <Header type = "About"/>
           <div >

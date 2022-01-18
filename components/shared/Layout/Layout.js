@@ -1,17 +1,16 @@
 import Head from 'next/head';
-import { Banner, BannerSpacing } from '../Banner';
 import { ContainerChrome, ContainerEdge } from './LayoutStyles';
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import { Provider } from 'react-redux'
 import store from '../../../app/store';
 import { webbrowserSetup } from './LayoutSlice';
 import { HeaderSpacing } from '../Header';
+import HeaderLinen from '../Header/HeaderLinen';
 
 const HeadComponent = ({webBrowser}) => {
   const dispatch = useDispatch();
   useEffect(() => {
-    console.log(webBrowser)
     dispatch(webbrowserSetup(webBrowser))
   },[webBrowser])
   return (
@@ -25,16 +24,14 @@ const HeadComponent = ({webBrowser}) => {
   )
 }
 
-
-export default class Layout extends React.Component {
-  constructor (props) {
-    super(props);
-    this.state = { webBrowser: null };
-  }
-  componentDidMount () {
+export default function Layout (props) {
+  const { children, type } = props
+  console.log(type)
+  const [browser, setBrowser] = useState(null)
+  useEffect (() => {
+    //Part 1: Detecting webBrowser
     let sBrowser, sUsrAg = navigator.userAgent;
     // The order matters here, and this may report false positives for unlisted browsers.
-
     if (sUsrAg.indexOf("Firefox") > -1) {
       sBrowser = "Mozilla Firefox";
       // "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
@@ -62,26 +59,31 @@ export default class Layout extends React.Component {
     } else {
       sBrowser = "unknown";
     }
-    this.setState({webBrowser: sBrowser})
-  }
-
-  render () {
-    return ( <>
+    setBrowser(() => sBrowser)
+    if (type === "qna") {
+            console.log("found")
+            document.querySelector("body").style.height = "100vh";
+            document.querySelector("body").style.overflowY = "scroll";
+    } else {
+      document.querySelector("body").style.overflowY = "auto";
+    } 
+      
+  }, [type, browser])
+  return ( <>
     <Provider store = {store}>
-      <HeadComponent webBrowser = {this.state.webBrowser}/>
-      <Banner/>
-      <BannerSpacing />
+      <HeadComponent />
       <HeaderSpacing />
-        { this.state.webBrowser === 'Microsoft Edge (Chromium)'
-          && <ContainerEdge> {this.props.children} </ContainerEdge>
+      <HeaderLinen />
+        { browser === 'Microsoft Edge (Chromium)'
+          && <ContainerEdge> {children} </ContainerEdge>
         }
-        { this.state.webBrowser !== 'Microsoft Edge (Chromium)'
-          && <ContainerChrome> {this.props.children} </ContainerChrome>
-        }
+        { browser !== 'Microsoft Edge (Chromium)'
+          && <ContainerChrome> {children} </ContainerChrome>
+        } 
+      {/* </div> */}
     </Provider>
     </> 
     ) 
-  }
 }
 
 

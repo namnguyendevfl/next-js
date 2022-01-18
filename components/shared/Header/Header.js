@@ -23,8 +23,8 @@ export default function Header({type}) {
         return (
         <li key = {idx}>
             <Link href = {link} >
-                <StyledNavItem onClick = {handleClick} style = {item !== "Home" ? padding : homePadding} className="m-0 txt-md fw-5 pe-4 txt-gray-7">
-                    <span style = {item === itemclicked ? {color:"#2563eb"} : null}>{item}</span> 
+                <StyledNavItem onClick = {handleClick} style = {item !== "About" ? padding : homePadding} className="m-0 txt-md fw-5 pe-4 txt-gray-7">
+                    <span style = {item === itemclicked ? {color:"#38bdf8"} : null}>{item}</span> 
                 </StyledNavItem >
             </Link>
         </li>
@@ -36,6 +36,5 @@ export default function Header({type}) {
                 {renderedNavItems}
             </StyledList>
         </StyledContainer>
-        <hr className="mt-0"></hr>
     </>)
 }

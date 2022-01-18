@@ -1,5 +1,4 @@
 import { StyledBtnContainer, StyledProject, StyledTech } from "./ProjectsStyles"
-
 const data = [
     {
         project_id: 1,
@@ -30,8 +29,6 @@ const data = [
     }
 ]
 
-
-
 export default function Projects() {
 
     const renderedProjects = data.map((project,idx) => {
@@ -41,11 +38,10 @@ export default function Projects() {
                     <div key = {techIdx} className='m-2 px-2 py-1 border-8px border-gray-1px' style = {{border: "1px solid "}}>
                         {tech}
                     </div>
-                
             )
         })
         return (
-            <div key = {idx} className="col-5 my-2">
+            <div key = {idx} className="my-2 float-end">
             <StyledProject>
                 <h3>{project.project_name}</h3>
                 <p>{project.project_description}</p>
@@ -53,21 +49,18 @@ export default function Projects() {
                     <div className='d-flex flex-wrap justify-content-center'>{renderedTech}</div>
                 </StyledTech>
                 <StyledBtnContainer className='w-100'>
-                    
                     <div className='d-flex justify-content-center'>
                         <button className='m-2 mb-4'>Tech</button>
                         <button className='m-2 mb-4'>Demo</button>
                         <button className='m-2 mb-4'>Code</button>
                     </div>
                 </StyledBtnContainer>
-                
             </StyledProject>
-
         </div>
         )
     })
     return (<>
-    <div className="row d-flex justify-content-evenly">
+    <div className="d-flex flex-wrap justify-content-evenly">
        {renderedProjects}
     </div>
     </>)
